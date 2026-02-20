@@ -1,0 +1,78 @@
+/*----------------------------------------------*\
+    VARIABLES
+    ======
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+
+@use "_components.scss" as c;
+
+
+// Colors
+:root {
+    --black: #000000;
+    --white: #ffffff;
+}
+
+//Font
+:root {
+    --font-sans-serif: 'helvetica-neue-lt-pro', sans-serif;
+    --font-serif: "times-new-roman", serif;
+}
+
+
+// Responsive Text Sizes
+:root {
+   /* Major Third (factor: 1.25)*/
+    --size-010: .134rem;
+    --size-020: .168rem;
+    --size-030: .21rem;
+    --size-040: .262rem;
+    --size-050: .328rem;
+    --size-060: .41rem;
+    --size-070: .512rem;
+    --size-080: .64rem;
+    --size-090: .8rem;
+    --size-100: 1rem;        /* <-- Default */
+    --size-200: 1.25rem;
+    --size-300: 1.563rem;
+    --size-400: 1.953rem;
+    --size-500: 2.441rem;
+    --size-600: 3.052rem;
+    --size-700: 3.815rem;    
+
+    @media screen and (min-width: c.$x-small) {
+        font-size: 1.1rem;
+    }
+    @media screen and (min-width: c.$small) {
+        font-size: 1.2rem;
+    }
+    @media screen and (min-width: c.$medium) {
+        font-size: 1.3rem;
+    }
+    @media screen and (min-width: c.$large) {
+        font-size: 1.4rem;
+    }
+    @media screen and (min-width: c.$x-large) {
+        font-size: 1.5rem;
+    }   
+    @media screen and (min-width: c.$xx-large) {
+        font-size: 1.6rem;
+    }
+} 
+
+
+// Responsive Margins
+:root {
+    --margin-outside: var(--size-300);
+    --margin-vertical-large: var(--size-600);
+    --margin-vertical-small: var(--size-100);
+
+    @media screen and (min-width: c.$medium) {
+        --margin-outside: 2em;
+    }
+    @media screen and (min-width: c.$x-large) {
+        --margin-outside: 3em;
+    }
+}
