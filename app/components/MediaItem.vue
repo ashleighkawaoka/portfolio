@@ -1,5 +1,5 @@
 <template>
-  <div class="media-item" @click="$emit('open')">
+  <div class="media-item">
     <video 
       v-if="item.type === 'video'"
       :src="item.src"
@@ -25,6 +25,4 @@ defineProps({
     required: true
   }
 })
-
-defineEmits(['open'])
 </script>
