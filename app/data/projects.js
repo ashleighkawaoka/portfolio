@@ -17,15 +17,15 @@ export const projects = [
       { label: 'Placeholder caption text', columns: 1, items: [
         { type: 'image', src: 'https://placehold.co/1200x800', alt: 'Test image' }
     ]},
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
     ]
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     route: '/projects/baking-ratios',
     thumbnails: [],
     header: {
-      intro: 'A self-initiated exploration of <span>Baking Ratios</span> examining the intersection of <span>food science and graphic design</span>. A typographic system built around the mathematical relationships found in baking.',
+      intro: 'Every baker\'s dream, <span>Baking Ratios</span> expores the visual language of baking through display typography and data visualization.',
       credits: [
         { role: 'Design', name: 'Placeholder Name' },
         { role: 'Photography', name: 'Placeholder Name' },
@@ -43,13 +43,13 @@ export const projects = [
     },
     sections: [
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2,items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
     ]
   },
@@ -60,7 +60,7 @@ export const projects = [
     route: '/projects/greed-type-specimen',
     thumbnails: [],
     header: {
-      intro: 'A type specimen exploring <span>Greed</span>, a self-initiated project examining <span>the visual language of excess and consumption</span> through experimental typography.',
+      intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series mixed compositions paying tribute to stock market visuals.',
       credits: [
         { role: 'Design', name: 'Placeholder Name' },
         { role: 'Typography', name: 'Placeholder Name' },
@@ -68,11 +68,13 @@ export const projects = [
     },
     sections: [
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
+      { label: 'Placeholder caption text', columns: 1, items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
       { label: 'Placeholder caption text', columns: 1, items: [] },
     ]
   },
@@ -83,7 +85,7 @@ export const projects = [
     route: '/projects/calarts-mfa-gd-poster',
     thumbnails: [],
     header: {
-      intro: 'Poster design for <span>CalArts MFA Graphic Design</span> created for <span>California Institute of the Arts Graphic Design Department</span>. A bold visual identity for the annual graduate design showcase.',
+      intro: 'Poster design for <span>CalArts MFA Graphic Design</span> created for <span>California Institute of the Arts Graphic Design Department</span>. and sent to the program\'s applicants serving as a manifesto for the program in 2026.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -92,7 +94,7 @@ export const projects = [
     },
     sections: [
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
     ]
   },
   {
@@ -102,7 +104,7 @@ export const projects = [
     route: '/projects/under-the-sun-foundation',
     thumbnails: [],
     header: {
-      intro: 'Website design and development for <span>Under the Sun</span>, created for <span>Under the Sun Foundation</span>. A digital platform supporting community arts programming and outreach.',
+      intro: 'Website design and development for <span>Under the Sun</span>, created for <span>Under the Sun Foundation</span>. Under the Sun Foundation supports community arts programming and outreach based in Los Angeles.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -111,7 +113,7 @@ export const projects = [
     },
     sections: [
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
     ]
   },
   {
@@ -121,7 +123,7 @@ export const projects = [
     route: '/projects/calarts-school-of-art-project-archive',
     thumbnails: [],
     header: {
-      intro: 'A video series documenting the <span>CalArts School of Art Project Archive</span>, produced for <span>California Institute of the Arts School of Art</span>. An ongoing series preserving and celebrating student work.',
+      intro: 'A video series promoting <span>CalArts School of Art Project Archive</span>, produced for <span>California Institute of the Arts School of Art</span>. asking students to submit their projects to the archive.',
       credits: [
         { role: 'Direction', name: 'Placeholder Name' },
         { role: 'Production', name: 'Placeholder Name' },
@@ -130,7 +132,7 @@ export const projects = [
     },
     sections: [
       { label: 'Placeholder caption text', columns: 1, items: [] },
-      { label: 'Placeholder caption text', columns: 2, bg: 'black', items: [] },
+      { label: 'Placeholder caption text', columns: 2, items: [] },
     ]
   }
 ]

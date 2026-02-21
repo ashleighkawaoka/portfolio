@@ -69,7 +69,7 @@ body {
     }
 
     &__link {
-        font-family: var(--font-sans-serif);
+        font-family: var(--font-serif);
         font-size: var(--size-100);
         text-decoration: none;
     }
@@ -96,7 +96,7 @@ body {
         display: none;
         flex-direction: column;
         gap: var(--size-050);
-        padding-top: var(--margin-vertical-small);
+        padding-top: var(--size-050);
         padding-bottom: var(--size-050);
 
         &--open {
@@ -105,6 +105,8 @@ body {
     }
 
     &__mobile-link {
+        font-family: var(--font-serif);
+        font-size: var(--size-200);
         text-decoration: none;
     }
 }
