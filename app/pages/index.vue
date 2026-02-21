@@ -4,7 +4,7 @@
     <!-- Hero Text -->
     <section class="home__hero">
       <p class="home__hero-text">
-        Ashleigh Kawaoka is pursuing her MFA in Graphic Design at California Institute of the Arts.
+        Just started, so this is highly under construction. Come back soon.
       </p>
     </section>
 
