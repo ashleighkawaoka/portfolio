@@ -4,11 +4,14 @@ export const projects = [
     name: 'The Design Center Website',
     client: 'California Institute of the Arts Graphic Design Department',
     route: '/projects/the-design-center',
-    thumbnails: [],
+    thumbnails: [
+        '/videos/the-design-center/video-18.mp4',
+    ],
+
     header: {
-      intro: 'Website Identity and Development for <span>The Design Center</span> for <span>California Institute of the Arts Graphic Design Department</span>, a peer-to-peer design, tutoring and collaboration service center at CalArts. Featuring playful interactions and color palettes and stylized shapes matched with Liny\'s typeface "Fabriga".',
+      intro: 'Website design and development for The Design Center at California Institute of the Arts.',
       credits: [
-        { role: 'Creative Direction', name: 'Michael Worthington and Roman Jaster' },
+        { role: 'Creative Direction', name: 'Placeholder' },
         { role: 'Branding', name: 'Placeholder Name' },
         { role: 'Photography', name: 'Placeholder Name' },
       ]
@@ -48,7 +51,9 @@ export const projects = [
     name: 'Baking Ratios',
     client: 'n/a',
     route: '/projects/baking-ratios',
-    thumbnails: [],
+    thumbnails: [
+        '/videos/baking-ratios/video-1.mp4',
+    ],
     header: {
       intro: 'Every baker\'s dream, <span>Baking Ratios</span> expores the visual language of baking through display typography and data visualization.',
       credits: [
@@ -91,7 +96,14 @@ export const projects = [
     name: 'Greed Type Specimen',
     client: 'n/a',
     route: '/projects/greed-type-specimen',
-    thumbnails: [],
+  route: '/projects/greed-type-specimen',
+  thumbnails: [
+        '/images/greed-type-specimen/img-1.jpg',
+        '/images/greed-type-specimen/img-2.jpg',
+        '/images/greed-type-specimen/img-3.jpg',
+        '/images/greed-type-specimen/img-4.jpg',
+        '/images/greed-type-specimen/img-7.jpg',
+    ],
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series mixed compositions paying tribute to stock market visuals.',
       credits: [
@@ -134,9 +146,12 @@ export const projects = [
     name: 'CalArts MFA GD Poster',
     client: 'California Institute of the Arts Graphic Design Department',
     route: '/projects/calarts-mfa-gd-poster',
-    thumbnails: [],
+    thumbnails: [
+        '/images/calarts-mfa-gd-poster/img-1.jpg',
+    ],
+
     header: {
-      intro: 'Poster design for <span>CalArts MFA Graphic Design</span> created for <span>California Institute of the Arts Graphic Design Department</span>. and sent to the program\'s applicants serving as a manifesto for the program in 2026.',
+      intro: 'Poster design for California Institute of the Arts MFA program, 2026.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -154,9 +169,11 @@ export const projects = [
     name: 'Under the Sun Website',
     client: 'Under the Sun Foundation',
     route: '/projects/under-the-sun-foundation',
-    thumbnails: [],
+    thumbnails: [
+        '/videos/under-the-sun-foundation/video-22.mp4',
+    ],
     header: {
-      intro: 'Website design and development for <span>Under the Sun</span>, created for <span>Under the Sun Foundation</span>. Under the Sun Foundation supports community arts programming and outreach based in Los Angeles.',
+      intro: 'Website design and development for <span>Under the Sun</span>,',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -179,7 +196,7 @@ export const projects = [
         { type: 'image', src: '/images/under-the-sun-foundation/img-26.jpg', alt: '' }
       ]},
         { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/under-the-sun-foundation/img-18.jpg', alt: '' },
+        { type: 'images', src: '/images/under-the-sun-foundation/img-18.jpg', alt: '' },
         { type: 'images', src: '/images/under-the-sun-foundation/img-8.jpg', alt: '' },
         ]},
       { label: '', columns: 2, items: [
@@ -199,9 +216,11 @@ export const projects = [
     name: 'CalArts School of Art Project Archive Video Series',
     client: 'California Institute of the Arts School of Art',
     route: '/projects/calarts-school-of-art-project-archive',
-    thumbnails: [],
+    thumbnails: [
+        '/videos/calarts-school-of-art-project-archive/video-1.mp4',
+    ],
     header: {
-      intro: 'A video series promoting <span>CalArts School of Art Project Archive</span>, produced for <span>California Institute of the Arts School of Art</span>. asking students to submit their projects to the archive.',
+      intro: 'Video Promo for <span>CalArts School of Art Project Archive</span>.',
       credits: [
         { role: 'Direction', name: 'Placeholder Name' },
         { role: 'Production', name: 'Placeholder Name' },

@@ -4,24 +4,34 @@
     <!-- Hero Text -->
     <section class="home__hero">
       <p class="home__hero-text">
-        Ashleigh Kawaoka is a graphic designer based in Los Angeles, 
-        working across identity, print, and digital media.
+        Ashleigh Kawaoka is pursuing her MFA in Graphic Design at California Institute of the Arts.
       </p>
     </section>
 
     <!-- Project Grid -->
     <section class="home__grid" id="work">
-    <div 
+      <div 
         v-for="project in projects" 
         :key="project.id" 
         class="home__card"
         @click="navigateTo(project.route)"
       >
-        <!-- Slideshow Image -->
+        <!-- Slideshow -->
         <div class="home__card-image">
-          <img 
-            :src="currentThumbnail(project)" 
+          <video
+            v-if="isVideo(currentThumbnail(project))"
+            :src="currentThumbnail(project)"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="home__card-media"
+          ></video>
+          <img
+            v-else
+            :src="currentThumbnail(project)"
             :alt="project.name"
+            class="home__card-media"
           />
         </div>
 
@@ -41,15 +51,12 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { projects } from '~/data/projects.js'
 
-// Track current slide index for each project
 const slideIndexes = ref({})
 
-// Initialize all projects at index 0
 projects.forEach(project => {
   slideIndexes.value[project.id] = 0
 })
 
-// Get the current thumbnail for a project
 const currentThumbnail = (project) => {
   if (!project.thumbnails || project.thumbnails.length === 0) {
     return 'https://placehold.co/600x400'
@@ -57,7 +64,10 @@ const currentThumbnail = (project) => {
   return project.thumbnails[slideIndexes.value[project.id]]
 }
 
-// Advance slides on a timer
+const isVideo = (src) => {
+  return src && src.endsWith('.mp4')
+}
+
 let interval = null
 
 onMounted(() => {
