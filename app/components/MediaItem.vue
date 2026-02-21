@@ -1,5 +1,8 @@
 <template>
-  <div class="media-item">
+  <div 
+    class="media-item"
+    :class="item.span ? `media-item--span-${item.span}` : ''"
+  >
     <video 
       v-if="item.type === 'video'"
       :src="item.src"

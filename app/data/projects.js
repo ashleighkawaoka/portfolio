@@ -14,31 +14,25 @@ export const projects = [
       ]
     },
     sections: [
-      { label: 'Landing Page', columns: 1, items: [
+      { label: '', columns: 1, items: [
         { type: 'video', src: '/videos/the-design-center/video-1.mp4' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/the-design-center/img-3.jpg', alt: '' },
-        { type: 'image', src: '/images/the-design-center/img-5.jpg', alt: '' }
-      ]},
-    { label: '', columns: 2, items: [
+        { type: 'image', src: '/images/the-design-center/img-2.jpg', alt: '' },
         { type: 'image', src: '/images/the-design-center/img-6.jpg', alt: '' },
-        { type: 'image', src: '/images/the-design-center/img-8.jpg', alt: '' }
       ]},
       { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/the-design-center/video-4.mp4' }
-        ]},
-      { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/the-design-center/video-7.mp4' }
-      ]},
-      { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/the-design-center/img-10.jpg', alt: '' }
+        { type: 'video', src: '/videos/the-design-center/video-18.mp4', alt: '' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/the-design-center/img-11.jpg', alt: '' },
-        { type: 'image', src: '/images/the-design-center/img-12.jpg', alt: '' }
+        { type: 'image', src: '/images/the-design-center/img-7.jpg', alt: '' },
+        { type: 'video', src: '/videos/the-design-center/video-19.mp4', alt: '' }
       ]},
-      { label: '', columns: 1, items: [
+    { label: '', columns: 1, items: [
+        { type: 'video', src: '/videos/the-design-center/video-9.mp4', alt: '' }
+      ]},
+      { label: '', columns: 2, items: [
+        { type: 'image', src: '/images/the-design-center/img-12.jpg', alt: '' },
         { type: 'image', src: '/images/the-design-center/img-13.jpg', alt: '' }
       ]},
       { label: '', columns: 4, items: [
@@ -69,24 +63,20 @@ export const projects = [
       { label: '', columns: 2, items: [
         { type: 'image', src: '/images/baking-ratios/img-2.jpg', alt: '' },
         { type: 'image', src: '/images/baking-ratios/img-3.jpg', alt: '' }
-      ]},
-      { label: '', columns: 2, items: [
-        { type: 'video', src: '/videos/baking-ratios/video-4.mp4' },
-        { type: 'image', src: '/images/baking-ratios/img-5.jpg', alt: '' }
-      ]},
+      ]},          
       { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/baking-ratios/video-7.mp4' }
+        { type: 'video', src: '/videos/baking-ratios/video-7.mp4' },
       ]},
-      { label: '', columns: 2, items: [
+         { label: '', columns: 2, items: [
         { type: 'image', src: '/images/baking-ratios/img-8.jpg', alt: '' },
-        { type: 'image', src: '/images/baking-ratios/img-9.jpg', alt: '' }
+        { type: 'image', src: '/images/baking-ratios/img-9.jpg', alt: '' },
+      ]},
+    { label: '', columns: 1, items: [
+        { type: 'video', src: '/videos/baking-ratios/video-10.mp4' }
       ]},
       { label: '', columns: 2, items: [
         { type: 'image', src: '/images/baking-ratios/img-11.jpg', alt: '' },
         { type: 'image', src: '/images/baking-ratios/img-12.jpg', alt: '' }
-      ]},
-      { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/baking-ratios/video-10.mp4' }
       ]},
       { label: '', columns: 4, items: [
         { type: 'image', src: '/images/baking-ratios/img-13.jpg', alt: '' },
@@ -111,31 +101,31 @@ export const projects = [
     },
     sections: [
       { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-1.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-1.jpg', alt: '' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-2.png', alt: '' },
-        { type: 'image', src: '/images/greed-type-specimen/img-3.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-2.jpg', alt: '' },
+        { type: 'image', src: '/images/greed-type-specimen/img-3.jpg', alt: '' }
       ]},
       { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-4.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-4.jpg', alt: '' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-5.png', alt: '' },
-        { type: 'image', src: '/images/greed-type-specimen/img-6.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-7.jpg', alt: '' },
+        { type: 'image', src: '/images/greed-type-specimen/img-6.jpg', alt: '' }
       ]},
       { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-7.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-5.jpg', alt: '' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-8.png', alt: '' },
-        { type: 'image', src: '/images/greed-type-specimen/img-9.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-8.jpg', alt: '' },
+        { type: 'image', src: '/images/greed-type-specimen/img-9.jpg', alt: '' }
       ]},
       { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-10.png', alt: '' }
+        { type: 'image', src: '/images/greed-type-specimen/img-11.jpg', alt: '' }
       ]},
-      { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/greed-type-specimen/img-11.png', alt: '' }
+      { label: '', columns: 1, items: [
+        { type: 'image', src: '/images/greed-type-specimen/img-10.jpg', alt: '' }
       ]},
     ]
   },
@@ -155,7 +145,7 @@ export const projects = [
     },
     sections: [
       { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/calarts-mfa-gd-poster/img-1.jpg', alt: '' }
+        { type: 'image', src: '/images/calarts-mfa-gd-poster/img-1.jpg', alt: '', span: 2}
       ]},
     ]
   },
@@ -179,25 +169,22 @@ export const projects = [
         { type: 'image', src: '/images/under-the-sun-foundation/img-3.jpg', alt: '' }
       ]},
       { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/under-the-sun-foundation/video-4.mp4' }
-      ]},
-      { label: '', columns: 2, items: [
         { type: 'image', src: '/images/under-the-sun-foundation/img-5.jpg', alt: '' },
-        { type: 'image', src: '/images/under-the-sun-foundation/img-6.jpg', alt: '' }
       ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/under-the-sun-foundation/img-8.jpg', alt: '' },
-        { type: 'image', src: '/images/under-the-sun-foundation/img-7.jpg', alt: '' }
+        { type: 'image', src: '/images/under-the-sun-foundation/img-24.jpg', alt: '' },
+        { type: 'video', src: '/videos/under-the-sun-foundation/video-23.mp4', alt: '' },
       ]},
       { label: '', columns: 1, items: [
-        { type: 'video', src: '/videos/under-the-sun-foundation/video-9.mp4' }
+        { type: 'image', src: '/images/under-the-sun-foundation/img-26.jpg', alt: '' }
       ]},
+        { label: '', columns: 2, items: [
+        { type: 'image', src: '/images/under-the-sun-foundation/img-18.jpg', alt: '' },
+        { type: 'images', src: '/images/under-the-sun-foundation/img-8.jpg', alt: '' },
+        ]},
       { label: '', columns: 2, items: [
-        { type: 'image', src: '/images/under-the-sun-foundation/img-10.jpg', alt: '' },
-        { type: 'image', src: '/images/under-the-sun-foundation/img-11.jpg', alt: '' },
-      ]},
-      { label: '', columns: 1, items: [
-        { type: 'image', src: '/images/under-the-sun-foundation/img-12.jpg', alt: '' }
+        { type: 'video', src: '/videos/under-the-sun-foundation/video-21.mp4', alt: '' },
+        { type: 'image', src: '/images/under-the-sun-foundation/img-12.jpg', alt: '' },
       ]},
       { label: '', columns: 4, items: [
         { type: 'image', src: '/images/under-the-sun-foundation/img-17.jpg', alt: '' },
