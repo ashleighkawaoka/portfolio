@@ -1,12 +1,5 @@
 <template>
   <div class="home">
-    
-    <!-- Hero Text -->
-    <section class="home__hero">
-      <p class="home__hero-text">
-        Just started, so this is highly under construction. Come back soon.
-      </p>
-    </section>
 
     <!-- Project Grid -->
     <section class="home__grid" id="work">

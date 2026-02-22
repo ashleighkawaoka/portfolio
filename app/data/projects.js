@@ -8,7 +8,7 @@ export const projects = [
       '/videos/the-design-center/video-20.mp4',
     ],
     header: {
-      intro: 'Website design and development for The Design Center at California Institute of the Arts.',
+      intro: 'Website design and development for <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer">The Design Center</a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder' },
         { role: 'Branding', name: 'Placeholder Name' },
@@ -99,7 +99,7 @@ export const projects = [
       '/videos/baking-ratios/video-1.mp4',
     ],
     header: {
-      intro: 'Every baker\'s dream, <span>Baking Ratios</span> explores the visual language of baking through display typography and data visualization.',
+      intro: '<a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer">Baking Ratios</a> is a data visualization tool for visually understanding common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. The three pages include a visualizer based on circle size, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic education in using ligatures, style alternates, and display typefaces.',
       credits: [
         { role: 'Design', name: 'Placeholder Name' },
         { role: 'Photography', name: 'Placeholder Name' },
@@ -180,7 +180,7 @@ export const projects = [
 	  '/images/greed-type-specimen/img-11.png',
     ],
     header: {
-      intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series of mixed compositions paying tribute to stock market visuals.',
+      intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. The specimen explores the versatility of the typeface through a series of mixed compositions and a stock market theme.',
       credits: [
         { role: 'Design', name: 'Placeholder Name' },
         { role: 'Typography', name: 'Placeholder Name' },
@@ -192,11 +192,11 @@ export const projects = [
         caption: 'Cover and full-bleed opener compositions.',
         rows: [
           { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-1.jpg', alt: '' },
-			{ type: 'image', src: '/images/greed-type-specimen/img-2.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-1.png', alt: '' },
+			{ type: 'image', src: '/images/greed-type-specimen/img-2.png', alt: '' }
           ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-3.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-3.png', alt: '' }
           ]},
         ]
       },
@@ -205,14 +205,14 @@ export const projects = [
         caption: 'Weight and width range spreads — condensed to extended.',
         rows: [
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-4.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-4.png', alt: '' }
           ]},
           { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-7.jpg', alt: '' },
-            { type: 'image', src: '/images/greed-type-specimen/img-6.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-7.png', alt: '' },
+            { type: 'image', src: '/images/greed-type-specimen/img-6.png', alt: '' }
           ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-5.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-5.png', alt: '' }
           ]},
         ]
       },
@@ -221,11 +221,11 @@ export const projects = [
         caption: 'Stock market–inspired compositions and closing pages.',
         rows: [
           { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-10.jpg', alt: '' },
-            { type: 'image', src: '/images/greed-type-specimen/img-9.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-10.png', alt: '' },
+            { type: 'image', src: '/images/greed-type-specimen/img-9.png', alt: '' }
           ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-11.jpg', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-11.png', alt: '' }
           ]},
         ]
       },
@@ -240,7 +240,7 @@ export const projects = [
       '/images/calarts-mfa-gd-poster/img-1.jpg',
     ],
     header: {
-      intro: 'Poster design for California Institute of the Arts MFA program, 2026.',
+      intro: 'Poster design for the <span>MFA Graphic Design Program</span> at <span>California Institute of the Arts</span>, 2026. The poster is a writing of the program\'s philosophy. This side of the poster was complemented by another student\'s writing and poster design as a way to showcase the program\'s versatility in practice and pedagogy. Posters were mailed to potential and accepted students.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -268,7 +268,7 @@ export const projects = [
       '/videos/under-the-sun-foundation/video-22.mp4',
     ],
     header: {
-      intro: 'Website design and development for <span>Under the Sun</span>.',
+      intro: 'The <a href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer">Under the Sun Foundation</a> is inspired by the work of Dennis Avery, the late landowner of Galleta Meadows in Borrego Springs, and his passion for bringing art to the local community and its visitors. Avery commissioned 130 large scale sculptures spread across the desert of Borrego Springs. Today the foundation supports other creative spaces and uses the space to host events and engage with the environment. The website functions as a tell-all for visitors, donors, and artists. It hosts information for annual events and a guide for those looking to experience the sculpture garden.',
       credits: [
         { role: 'Creative Direction', name: 'Placeholder Name' },
         { role: 'Design', name: 'Placeholder Name' },
@@ -337,15 +337,41 @@ export const projects = [
     ]
   },
   {
+    id: 'museum-of-fine-print',
+    name: 'Museum of Fine Print',
+    client: 'Placeholder',
+    route: '/projects/museum-of-fine-print',
+    thumbnails: [
+      '/images/museum-of-fine-print/img-1.jpg',
+    ],
+    header: {
+      intro: 'The <span>Museum of Fine Print</span> is a collection of smaller less noticeable print often found in contracts, advertisements, or agreements that typically outline hidden fees, expiration dates, or liability waivers. The poster\'s typography is made of scanned and digitally collected fine print and serves as a promo for its hypothetical exhibition.',
+      credits: [
+        { role: 'Design', name: 'Placeholder Name' },
+      ]
+    },
+    sections: [
+      {
+        background: 'white',
+        caption: 'Homepage — hero, mission statement, and primary navigation.',
+        rows: [
+          { columns: 4, items: [
+            { type: 'image', src: '/images/museum-of-fine-print/img-1.jpg', alt: '', span: 2, centered: true },
+          ]},
+        ]
+      }
+    ]
+  },
+  {
     id: 'calarts-school-of-art-project-archive',
     name: 'CalArts School of Art Project Archive Video Series',
     client: 'California Institute of the Arts School of Art',
     route: '/projects/calarts-school-of-art-project-archive',
     thumbnails: [
-      '/videos/calarts-school-of-art-project-archive/video-5.mp4',
+      '/videos/calarts-school-of-art-project-archive/video-1.mp4',
     ],
     header: {
-      intro: 'Video Promo for <span>CalArts School of Art Project Archive</span>.',
+      intro: 'The <span>School of Art</span> at <span>California Institute of the Arts</span> hosts documentation of final student work. The School of Art Project Archive has offered a window into student work since 2021. Each year the Project Archive asks students to submit their work via a website link. The archive has taken on multiple identities over its time, but the names of its students remain the connecting thread for incoming students and future employers.',
       credits: [
         { role: 'Direction', name: 'Placeholder Name' },
         { role: 'Production', name: 'Placeholder Name' },
