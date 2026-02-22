@@ -9,8 +9,8 @@ export const projects = [
       '/videos/the-design-center/video-20.mp4',
     ],
     header: {
-      intro: 'The Design Center</a><br>Website design and development for <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"><span>The Design Center</span></a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
-      credits: 'LINK <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer">The Design Center</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
+      intro: 'The Design Center</a><br>Website design and development for <a class="website" href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"><span>The Design Center</span></a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
+      credits: 'LINK <a class="website" href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer">The Design Center</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
     },
     sections: [
       {
@@ -88,8 +88,8 @@ export const projects = [
       '/videos/baking-ratios/video-1.mp4',
     ],
     header: {
-      intro: '<a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Bak:ng Rat:os</span></a> is a data visualization tool for common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
-      credits: 'LINK <a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer">Bak:ng Rat:os</a><br>Web Design and Web Development<br>2026<br><br>TYPEFACE DESIGN Lubaline by Sproviero Type<br>TYPEFACE DESIGN Pino Grigio Modern by Alan Meeks'
+      intro: '<a class="website" href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Bak:ng Rat:os</span></a> is a data visualization tool for common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
+      credits: 'LINK <a class="website" href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer">Bak:ng Rat:os</a><br>Web Design and Web Development<br>2026<br><br>TYPEFACE DESIGN Lubaline by Sproviero Type<br>TYPEFACE DESIGN Pino Grigio Modern by Alan Meeks'
     },
     sections: [
       {
@@ -248,8 +248,8 @@ export const projects = [
       '/videos/under-the-sun-foundation/video-22.mp4',
     ],
     header: {
-      intro: 'The <a href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer"><span>Under the Sun Foundation</span></a> is inspired by the work of Dennis Avery, the late landowner of Galleta Meadows in Borrego Springs, and his passion for bringing art to the local community and its visitors. Avery commissioned 130 large scale sculptures spread across the desert of Borrego Springs. Today the foundation supports other creative spaces and uses the space to host events and engage with the environment. The website functions as a tell-all for visitors, donors, and artists. It hosts information for annual events and a guide for those looking to experience the sculpture garden.',
-      credits: 'LINK <a href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer">Under the Sun Foundation</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>CREATIVE DIRECTION Yay Brigade<br>PHOTOGRAPHY Under the Sun Foundation'
+      intro: 'The <a class="website" href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer"><span>Under the Sun Foundation</span></a> is inspired by the work of Dennis Avery, the late landowner of Galleta Meadows in Borrego Springs, and his passion for bringing art to the local community and its visitors. Avery commissioned 130 large scale sculptures spread across the desert of Borrego Springs. Today the foundation supports other creative spaces and uses the space to host events and engage with the environment. The website functions as a tell-all for visitors, donors, and artists. It hosts information for annual events and a guide for those looking to experience the sculpture garden.',
+      credits: 'LINK <a class="website" href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer">Under the Sun Foundation</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>CREATIVE DIRECTION Yay Brigade<br>PHOTOGRAPHY Under the Sun Foundation'
     },
     sections: [
       {

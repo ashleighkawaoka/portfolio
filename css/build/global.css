@@ -419,6 +419,14 @@ body {
   line-height: 1.2;
 }
 
+.website {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+.website:hover {
+  text-decoration: underline;
+}
+
 /* 
  * ANCHOR: Project Page
 ------------------------------------------------*/
