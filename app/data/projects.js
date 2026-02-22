@@ -110,12 +110,14 @@ export const projects = [
         background: 'white',
         caption: 'Cover and introductory spreads.',
         rows: [
-          { columns: 1, items: [
-            { type: 'video', src: '/videos/baking-ratios/video-1.mp4' }
-          ]},
-          { columns: 2, items: [
+          { columns: 4, items: [
             { type: 'image', src: '/images/baking-ratios/img-2.jpg', alt: '' },
-            { type: 'image', src: '/images/baking-ratios/img-3.jpg', alt: '' }
+            { type: 'image', src: '/images/baking-ratios/img-3.jpg', alt: '' },
+            { type: 'image', src: '/images/baking-ratios/img-17.jpg', alt: '' },
+            { type: 'image', src: '/images/baking-ratios/img-18.jpg', alt: '' }			
+          ]},
+			{ columns: 1, items: [
+            { type: 'video', src: '/videos/baking-ratios/video-1.mp4' }
           ]},
         ]
       },
@@ -169,7 +171,11 @@ export const projects = [
       '/images/greed-type-specimen/img-2.jpg',
       '/images/greed-type-specimen/img-3.jpg',
       '/images/greed-type-specimen/img-4.jpg',
+	  '/images/greed-type-specimen/img-5.jpg',
+	  '/images/greed-type-specimen/img-6.jpg',
       '/images/greed-type-specimen/img-7.jpg',
+	  '/images/greed-type-specimen/img-8.jpg',
+	  '/images/greed-type-specimen/img-9.jpg',
     ],
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series of mixed compositions paying tribute to stock market visuals.',
@@ -296,7 +302,7 @@ export const projects = [
         caption: 'Homepage — hero, mission statement, and primary navigation.',
         rows: [
           { columns: 1, items: [
-            { type: 'image', src: '/images/under-the-sun-foundation/img-26.jpg', alt: '' }
+            { type: 'video', src: '/videos/under-the-sun-foundation/video-22.mp4', alt: '' }
           ]},
           { columns: 2, items: [
             { type: 'image', src: '/images/under-the-sun-foundation/img-18.jpg', alt: '' },
@@ -334,7 +340,7 @@ export const projects = [
     client: 'California Institute of the Arts School of Art',
     route: '/projects/calarts-school-of-art-project-archive',
     thumbnails: [
-      '/videos/calarts-school-of-art-project-archive/video-1.mp4',
+      '/videos/calarts-school-of-art-project-archive/video-5.mp4',
     ],
     header: {
       intro: 'Video Promo for <span>CalArts School of Art Project Archive</span>.',
