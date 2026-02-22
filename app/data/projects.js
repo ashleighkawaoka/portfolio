@@ -117,7 +117,7 @@ export const projects = [
             { type: 'image', src: '/images/baking-ratios/img-18.jpg', alt: '' }			
           ]},
 			{ columns: 1, items: [
-            { type: 'video', src: '/videos/baking-ratios/video-1.mp4' }
+            { type: 'video', src: '/videos/baking-ratios/video-1.mp4', frame: true }
           ]},
         ]
       },
@@ -126,7 +126,7 @@ export const projects = [
         caption: 'Data visualization spreads — ratio charts and ingredient breakdowns.',
         rows: [
           { columns: 1, items: [
-            { type: 'video', src: '/videos/baking-ratios/video-7.mp4' }
+            { type: 'video', src: '/videos/baking-ratios/video-7.mp4', frame: true }
           ]},
           { columns: 2, items: [
             { type: 'image', src: '/images/baking-ratios/img-8.jpg', alt: '' },
@@ -139,7 +139,7 @@ export const projects = [
         caption: 'Display typography and closing spreads.',
         rows: [
           { columns: 1, items: [
-            { type: 'video', src: '/videos/baking-ratios/video-10.mp4' }
+            { type: 'video', src: '/videos/baking-ratios/video-10.mp4', frame: true }
           ]},
           { columns: 2, items: [
             { type: 'image', src: '/images/baking-ratios/img-11.jpg', alt: '' },
@@ -167,15 +167,17 @@ export const projects = [
     client: 'n/a',
     route: '/projects/greed-type-specimen',
     thumbnails: [
-      '/images/greed-type-specimen/img-22.jpg',
-      '/images/greed-type-specimen/img-23.jpg',
-      '/images/greed-type-specimen/img-24.jpg',
-      '/images/greed-type-specimen/img-25.jpg',
-	  '/images/greed-type-specimen/img-26.jpg',
-	  '/images/greed-type-specimen/img-27.jpg',
-      '/images/greed-type-specimen/img-28.jpg',
-	  '/images/greed-type-specimen/img-29.jpg',
-	  '/images/greed-type-specimen/img-30.jpg',
+      '/images/greed-type-specimen/img-1.png',
+      '/images/greed-type-specimen/img-2.png',
+      '/images/greed-type-specimen/img-3.png',
+      '/images/greed-type-specimen/img-4.png',
+	  '/images/greed-type-specimen/img-5.png',
+	  '/images/greed-type-specimen/img-6.png',
+      '/images/greed-type-specimen/img-7.png',
+	  '/images/greed-type-specimen/img-8.png',
+	  '/images/greed-type-specimen/img-9.png',
+	  '/images/greed-type-specimen/img-10.png',
+	  '/images/greed-type-specimen/img-11.png',
     ],
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series of mixed compositions paying tribute to stock market visuals.',
@@ -235,7 +237,7 @@ export const projects = [
     client: 'California Institute of the Arts Graphic Design Department',
     route: '/projects/calarts-mfa-gd-poster',
     thumbnails: [
-      '/images/calarts-mfa-gd-poster/img-2.jpg',
+      '/images/calarts-mfa-gd-poster/img-1.jpg',
     ],
     header: {
       intro: 'Poster design for California Institute of the Arts MFA program, 2026.',
@@ -334,20 +336,6 @@ export const projects = [
       },
     ]
   },
-  {
-  id: 'museum-of-fine-print',
-  name: 'Museum of Fine Print',
-  client: 'Placeholder',
-  route: '/projects/museum-of-fine-print',
-  thumbnails: [],
-  header: {
-    intro: 'Info here for <span>Museum of Fine Print</span>.',
-    credits: [
-      { role: 'Design', name: 'Placeholder Name' },
-    ]
-  },
-  sections: []
-},
   {
     id: 'calarts-school-of-art-project-archive',
     name: 'CalArts School of Art Project Archive Video Series',

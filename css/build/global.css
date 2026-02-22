@@ -1,0 +1,591 @@
+/*----------------------------------------------*\
+    GLOBAL
+    ======
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+/*----------------------------------------------*\
+    RESET
+    =====
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, ins, kbd, q, s, samp,
+small, strike, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+* { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */ /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */ /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+table { /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+a {
+  color: inherit;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0;
+}
+
+img {
+  border: 0 none;
+  height: auto;
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+a img {
+  border: 0;
+}
+
+button {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  color: currentColor;
+  cursor: pointer;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar */
+}
+
+/* Webkit specific */
+input, textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/*----------------------------------------------*\
+    VARIABLES
+    ======
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+/*----------------------------------------------*\
+    COMPONENTS
+    ==========
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+/* 
+ *
+ * / Variables
+------------------------------------------------*/
+/* Colors */
+/* Breakpoints */
+/* 368px, bigger phones */
+/* 560px */
+/* 800px */
+/* 1008px, tablet vertical */
+/* 1200px */
+/* 1440px, desktop */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+
+:root {
+  --font-sans-serif: 'helvetica-neue-lt-pro', sans-serif;
+  --font-serif: "times-new-roman", serif;
+}
+
+:root {
+  /* Major Third (factor: 1.25)*/
+  --size-010: .134rem;
+  --size-020: .168rem;
+  --size-030: .21rem;
+  --size-040: .262rem;
+  --size-050: .328rem;
+  --size-060: .41rem;
+  --size-070: .512rem;
+  --size-080: .64rem;
+  --size-090: .8rem;
+  --size-100: 1rem; /* <-- Default */
+  --size-200: 1.25rem;
+  --size-300: 1.563rem;
+  --size-400: 1.953rem;
+  --size-500: 2.441rem;
+  --size-600: 3.052rem;
+  --size-700: 3.815rem;
+}
+@media screen and (min-width: 23rem) {
+  :root {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 35rem) {
+  :root {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 50rem) {
+  :root {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 63rem) {
+  :root {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  :root {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  :root {
+    font-size: 1.6rem;
+  }
+}
+
+:root {
+  --margin-outside: var(--size-300);
+  --margin-vertical-large: var(--size-600);
+  --margin-vertical-small: var(--size-100);
+}
+@media screen and (min-width: 50rem) {
+  :root {
+    --margin-outside: 2em;
+  }
+}
+@media screen and (min-width: 75rem) {
+  :root {
+    --margin-outside: 3em;
+  }
+}
+
+/*----------------------------------------------*\
+    VARIABLES
+    ======
+
+    @package ashleighkawaoka
+
+\*----------------------------------------------*/
+/* 
+ * ANCHOR: Global
+------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  color: var(--black);
+  min-width: 320px;
+}
+
+.max-width {
+  margin: 0 auto;
+  padding: 0 var(--margin-outside);
+}
+@media screen and (min-width: 23rem) {
+  .max-width {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+/* 
+ * ANCHOR: Nav
+------------------------------------------------*/
+.nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white);
+  padding: var(--size-050) var(--size-100);
+}
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__home {
+  font-family: var(--font-sans-serif);
+  font-size: var(--size-090);
+  text-decoration: none;
+  color: var(--black);
+}
+.nav__right {
+  display: flex;
+  gap: var(--size-300);
+}
+.nav__link {
+  font-size: var(--size-090);
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* 
+ * ANCHOR: Home
+------------------------------------------------*/
+.home {
+  padding: 0 var(--margin-outside);
+}
+.home__hero {
+  padding: var(--size-600) 0;
+}
+.home__hero-text {
+  font-family: var(--font-serif);
+  font-size: var(--size-300);
+  line-height: 1;
+  color: var(--black);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media screen and (min-width: 50rem) {
+  .home__hero-text {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .home__hero-text {
+    max-width: 70%;
+  }
+}
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: var(--size-300) 0;
+}
+@media screen and (min-width: 75rem) {
+  .home__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.home__card {
+  cursor: pointer;
+  padding: var(--size-050);
+}
+.home__card-image {
+  width: 100%;
+  overflow: hidden;
+}
+.home__card-media {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.home__card-label {
+  padding: var(--size-080) 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.home__card-title {
+  font-family: var(--font-sans-serif);
+  font-size: var(--size-080);
+  line-height: 1.2;
+}
+.home__card-client {
+  font-family: var(--font-sans-serif);
+  font-size: var(--size-080);
+  color: var(--black);
+  line-height: 1.35;
+}
+
+/* 
+ * ANCHOR: Project Header
+------------------------------------------------*/
+.project-header {
+  padding: var(--size-600) var(--margin-outside);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--size-400);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.project-header__intro {
+  font-family: var(--font-sans-serif);
+  font-size: var(--size-300);
+  line-height: 1.1;
+  max-width: 900px;
+}
+.project-header__credits {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.project-header__credit {
+  font-family: var(--font-serif);
+  font-size: var(--size-080);
+  line-height: 1.2;
+}
+
+/* 
+ * ANCHOR: Project Page
+------------------------------------------------*/
+.project__content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+ * ANCHOR: Project Section
+------------------------------------------------*/
+.project-section-wrapper {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--black);
+}
+.project-section-wrapper--black {
+  background-color: var(--black);
+  color: var(--white);
+}
+.project-section-wrapper--black .content-row__caption {
+  color: var(--white);
+}
+.project-section-wrapper--black .content-row__placeholder {
+  background-color: var(--white);
+  opacity: 0.1;
+}
+
+.project-section-container {
+  margin: 0 auto;
+  padding: var(--size-200) var(--size-700);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-050);
+}
+
+/* 
+ * ANCHOR: Content Row
+------------------------------------------------*/
+.content-row__grid {
+  display: grid;
+  gap: var(--size-050);
+}
+.content-row__grid--1col {
+  grid-template-columns: 1fr;
+}
+.content-row__grid--2col {
+  grid-template-columns: 1fr 1fr;
+}
+.content-row__grid--4col {
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 50rem) {
+  .content-row__grid--4col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.content-row__placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--black);
+  opacity: 0.1;
+}
+.content-row__caption {
+  font-family: var(--font-serif);
+  font-size: var(--size-080);
+  color: var(--black);
+  text-align: center;
+}
+
+/* 
+ * ANCHOR: Media Item
+------------------------------------------------*/
+.media-item {
+  width: 100%;
+}
+.media-item--span-2 {
+  grid-column: span 2;
+}
+.media-item--span-3 {
+  grid-column: span 3;
+}
+.media-item--span-4 {
+  grid-column: span 4;
+}
+.media-item--centered {
+  grid-column: span 2;
+}
+@media screen and (min-width: 50rem) {
+  .media-item--centered {
+    grid-column: 2/span 2;
+  }
+}
+.media-item__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.media-item__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* 
+ * ANCHOR: Contact
+------------------------------------------------*/
+.contact {
+  padding: var(--size-600) var(--margin-outside);
+}
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-vertical-large);
+  margin: 0 auto;
+  align-items: flex-start;
+}
+@media screen and (min-width: 50rem) {
+  .contact__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: var(--margin-outside);
+  }
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: var(--font-sans-serif);
+  font-size: var(--size-090);
+  line-height: 1.2;
+}
+.contact__info a {
+  text-decoration: none;
+  color: var(--black);
+}
+.contact__resume {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-vertical-small);
+}
+@media screen and (min-width: 50rem) {
+  .contact__resume {
+    max-width: 50%;
+  }
+}
+.contact__resume-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  font-family: var(--font-serif);
+  font-size: var(--size-080);
+  line-height: 1.2;
+}
+.contact__resume-title {
+  font-family: var(--font-serif);
+  font-size: var(--size-080);
+  line-height: 1.2;
+  padding-bottom: var(--size-050);
+}
