@@ -17,8 +17,8 @@
 
 //Font
 :root {
-    --font-sans-serif: 'helvetica-neue-lt-pro', sans-serif;
-    --font-serif: "times-new-roman", serif;
+    --font-sans-serif: neue-haas-grotesk-text, sans-serif;
+    --font-serif: georgia, sans-serif;
 }
 
 
@@ -65,7 +65,7 @@
 
 // Responsive Margins
 :root {
-    --margin-outside: var(--size-300);
+    --margin-outside: var(--size-200);
     --margin-vertical-large: var(--size-600);
     --margin-vertical-small: var(--size-100);
 

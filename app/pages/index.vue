@@ -4,25 +4,27 @@
     <!-- Project Grid -->
     <section class="home__grid" id="work">
       <div 
-        v-for="project in projects" 
+        v-for="project in projectsIndex" 
         :key="project.id" 
         class="home__card"
         @click="navigateTo(project.route)"
       >
-        <!-- Slideshow -->
+        <!--Thumbnail -->
         <div class="home__card-image">
           <video
-            v-if="isVideo(currentThumbnail(project))"
-            :src="currentThumbnail(project)"
+            v-if="isVideo(project.thumbnails?.[0])"
+            :src="project.thumbnails[0]"
+            :poster="getPosterImage(project.thumbnails[0])"
             autoplay
             muted
             loop
             playsinline
+            preload="metadata"
             class="home__card-media"
           ></video>
           <img
             v-else
-            :src="currentThumbnail(project)"
+            :src="project.thumbnails?.[0] || 'https://placehold.co/600x400'"
             :alt="project.name"
             class="home__card-media"
           />
@@ -30,8 +32,7 @@
 
         <!-- Project Label -->
         <div class="home__card-label">
-          <span class="home__card-title">{{ project.name }}</span>
-          <span class="home__card-client">{{ project.client }}</span>
+          {{ project.name }}<br>{{ project.type }}
         </div>
 
       </div>
@@ -41,40 +42,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import { projects } from '~/data/projects.js'
-
-const slideIndexes = ref({})
-
-projects.forEach(project => {
-  slideIndexes.value[project.id] = 0
-})
-
-const currentThumbnail = (project) => {
-  if (!project.thumbnails || project.thumbnails.length === 0) {
-    return 'https://placehold.co/600x400'
-  }
-  return project.thumbnails[slideIndexes.value[project.id]]
-}
+import { projectsIndex } from '~/data/projects-index.js'
 
 const isVideo = (src) => {
   return src && src.endsWith('.mp4')
 }
 
-let interval = null
-
-onMounted(() => {
-  interval = setInterval(() => {
-    projects.forEach(project => {
-      if (project.thumbnails && project.thumbnails.length > 1) {
-        const current = slideIndexes.value[project.id]
-        slideIndexes.value[project.id] = (current + 1) % project.thumbnails.length
-      }
-    })
-  }, 800)
-})
-
-onUnmounted(() => {
-  clearInterval(interval)
-})
+// Generate poster image path from video path
+const getPosterImage = (videoSrc) => {
+  if (!videoSrc || !videoSrc.endsWith('.mp4')) return ''
+  // Replace /videos/ with /images/ and .mp4 with -poster.jpg
+  return videoSrc.replace('/videos/', '/images/').replace('.mp4', '-poster.jpg')
+}
 </script>

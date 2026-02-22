@@ -19,14 +19,6 @@
             @open="openLightbox(rowIndex, index)"
           />
 
-          <!-- Placeholders when no items yet -->
-          <div 
-            v-if="row.items.length === 0"
-            v-for="n in row.columns"
-            :key="'placeholder-' + n"
-            class="content-row__placeholder"
-          ></div>
-
         </div>
       </template>
 
@@ -59,6 +51,7 @@
           <video
             v-if="currentItem?.type === 'video'"
             :src="currentItem.src"
+            :poster="getPosterImage(currentItem.src)"
             autoplay
             muted
             loop
@@ -152,6 +145,12 @@ const handleKeydown = (e) => {
   if (e.key === 'Escape') closeLightbox()
   if (e.key === 'ArrowLeft') prev()
   if (e.key === 'ArrowRight') next()
+}
+
+// Convert video path to poster image path
+const getPosterImage = (videoSrc) => {
+  if (!videoSrc || !videoSrc.endsWith('.mp4')) return ''
+  return videoSrc.replace('/videos/', '/images/').replace('.mp4', '-poster.jpg')
 }
 
 onMounted(() => window.addEventListener('keydown', handleKeydown))

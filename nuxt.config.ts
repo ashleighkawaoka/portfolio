@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         { rel: 'shortcut icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'manifest', href: '/site.webmanifest' },
-        { rel: 'stylesheet', href: 'https://use.typekit.net/qgr7wto.css' }
+        { rel: 'preconnect', href: 'https://use.typekit.net' },
+        { rel: 'stylesheet', href: 'https://use.typekit.net/yea2wyl.css', media: 'print', onload: "this.media='all'" }
       ],
       meta: [
         { name: 'apple-mobile-web-app-title', content: 'Ashleigh Kawaoka' }
