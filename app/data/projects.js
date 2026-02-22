@@ -9,13 +9,13 @@ export const projects = [
       '/videos/the-design-center/video-20.mp4',
     ],
     header: {
-      intro: 'Website design and development for <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"><span>The Design Center</span></a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
-      credits: 'Web Design and Web Development<br>2025<br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
+      intro: 'The Design Center</a><br>Website design and development for <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"><span>The Design Center</span></a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
+      credits: 'LINK <a href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer">The Design Center</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Homepage and navigation system, desktop and mobile.',
+        caption: 'Services Section',
         rows: [
           { columns: 1, items: [
             { type: 'video', src: '/videos/the-design-center/video-20.mp4', alt: '' }
@@ -28,7 +28,7 @@ export const projects = [
 		}, 
 		{
 		background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
+        caption: 'Navigation',
         rows: [
 			{ columns: 1, items: [
             { type: 'video', src: '/videos/the-design-center/video-18.mp4', alt: '' }
@@ -37,7 +37,7 @@ export const projects = [
       },
 		{
 		background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
+        caption: 'FAQs Section',
         rows: [
 		         { columns: 2, items: [
             { type: 'image', src: '/images/the-design-center/img-7.jpg', alt: '' },
@@ -47,25 +47,16 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
+        caption: 'Meet the Team Section',
         rows: [
           { columns: 1, items: [
             { type: 'video', src: '/videos/the-design-center/video-9.mp4', alt: '' }
           ]},
 		]
 	},
-		{
-		background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
-        rows: [
-			{ columns: 1, items: [
-            { type: 'video', src: '/videos/the-design-center/video-18.mp4', alt: '' }
-          ]},
-		]
-      },
       {
         background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
+        caption: 'Book an Appointment Section and Footer',
         rows: [
           { columns: 2, items: [
             { type: 'image', src: '/images/the-design-center/img-12.jpg', alt: '' },
@@ -75,7 +66,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Typography system and grid details across breakpoints.',
+        caption: 'Mobile View',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/the-design-center/img-14.jpg', alt: '' },
@@ -89,7 +80,7 @@ export const projects = [
   },
   {
     id: 'baking-ratios',
-    name: 'Baking Ratios',
+    name: 'Bak:ng Rat:os',
     type: 'Web Design, Web Development',
     client: 'n/a',
     route: '/projects/baking-ratios',
@@ -97,13 +88,13 @@ export const projects = [
       '/videos/baking-ratios/video-1.mp4',
     ],
     header: {
-      intro: '<a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Baking Ratios</span></a> is a data visualization tool for common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
-      credits: 'Web Design and Web Development<br>2026<br>TYPEFACE DESIGN Lubaline by Sproviero Type<br>TYPEFACE DESIGN Pino Grigio Modern by Alan Meeks'
+      intro: '<a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Bak:ng Rat:os</span></a> is a data visualization tool for common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
+      credits: 'LINK <a href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer">Bak:ng Rat:os</a><br>Web Design and Web Development<br>2026<br><br>TYPEFACE DESIGN Lubaline by Sproviero Type<br>TYPEFACE DESIGN Pino Grigio Modern by Alan Meeks'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Cover and introductory spreads.',
+        caption: 'Ratio Visualizer',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/baking-ratios/img-2.jpg', alt: '' },
@@ -118,7 +109,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Data visualization spreads — ratio charts and ingredient breakdowns.',
+        caption: 'Ingredient Calculator',
         rows: [
           { columns: 1, items: [
             { type: 'video', src: '/videos/baking-ratios/video-7.mp4', frame: true }
@@ -131,7 +122,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Display typography and closing spreads.',
+        caption: 'Recipes',
         rows: [
           { columns: 1, items: [
             { type: 'video', src: '/videos/baking-ratios/video-10.mp4', frame: true }
@@ -144,7 +135,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Display typography and closing spreads.',
+        caption: 'Mobile View',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/baking-ratios/img-13.jpg', alt: '' },
@@ -167,48 +158,56 @@ export const projects = [
     ],
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. The specimen explores the versatility of the typeface through a series of mixed compositions and a stock market theme.',
-      credits: 'Publication Design<br>2025<br>TYPEFACE DESIGN Greed by Displaay<br>CREATIVE DIRECTION Michael Worthington'
+      credits: 'Publication Design<br>2025<br><br>TYPEFACE DESIGN Greed by Displaay<br>CREATIVE DIRECTION Michael Worthington'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Cover and full-bleed opener compositions.',
+		caption: 'Weights Spread',
         rows: [
           { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-1.png', alt: '' },
-			{ type: 'image', src: '/images/greed-type-specimen/img-2.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-1.jpg', alt: '' },
+			{ type: 'image', src: '/images/greed-type-specimen/img-2.jpg', alt: '' }
           ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-3.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-3.jpg', alt: '' }
           ]},
         ]
       },
       {
         background: 'white',
-        caption: 'Weight and width range spreads — condensed to extended.',
+        caption: 'Weights and Widths Spread',
         rows: [
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-4.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-4.jpg', alt: '' }
           ]},
           { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-7.png', alt: '' },
-            { type: 'image', src: '/images/greed-type-specimen/img-6.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-7.jpg', alt: '' },
+            { type: 'image', src: '/images/greed-type-specimen/img-6.jpg', alt: '' }
           ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-5.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-5.jpg', alt: '' }
+          ]},
+        ]
+      },
+	    {
+        background: 'white',
+        caption: 'Alternate Characters',
+        rows: [
+          { columns: 1, items: [
+            { type: 'image', src: '/images/greed-type-specimen/img-10.jpg', alt: '' },
+          ]},
+		{ columns: 2, items: [
+            { type: 'image', src: '/images/greed-type-specimen/img-9.jpg', alt: '' },
+            { type: 'image', src: '/images/greed-type-specimen/img-8.jpg', alt: '' }
           ]},
         ]
       },
       {
         background: 'white',
-        caption: 'Stock market–inspired compositions and closing pages.',
         rows: [
-          { columns: 2, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-10.png', alt: '' },
-            { type: 'image', src: '/images/greed-type-specimen/img-9.png', alt: '' }
-          ]},
           { columns: 1, items: [
-            { type: 'image', src: '/images/greed-type-specimen/img-11.png', alt: '' }
+            { type: 'image', src: '/images/greed-type-specimen/img-11.jpg', alt: '' }
           ]},
         ]
       },
@@ -224,13 +223,13 @@ export const projects = [
       '/images/calarts-mfa-gd-poster/img-1.jpg',
     ],
     header: {
-      intro: 'Poster design for the <span>MFA Graphic Design Program</span> at <span>California Institute of the Arts</span>, 2026. The poster is a writing of the program\'s philosophy. This side of the poster was complemented by another student\'s writing and poster design as a way to showcase the program\'s versatility in practice and pedagogy. Posters were mailed to potential and accepted students.',
-      credits: 'Poster<br>2026<br>Adriana Ridings<br>CREATIVE DIRECTION Micheal Worthington'
+      intro: 'Poster design for the <span>MFA Graphic Design Program</span> at <span>California Institute of the Arts</span>, 2026. The poster is a writing on the MFA program\'s philosophy and pedagogy. Posters were mailed to potential and accepted students.',
+      credits: 'Poster<br>2026<br><br>CREATIVE DIRECTION Micheal Worthington'
     },
     sections: [
       {
         background: 'white',
-        caption: '18 × 24 in. offset lithograph, edition of 500.',
+        caption: '20 × 30 in.',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/calarts-mfa-gd-poster/img-1.jpg', alt: '', span: 2, centered: true }
@@ -250,12 +249,12 @@ export const projects = [
     ],
     header: {
       intro: 'The <a href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer"><span>Under the Sun Foundation</span></a> is inspired by the work of Dennis Avery, the late landowner of Galleta Meadows in Borrego Springs, and his passion for bringing art to the local community and its visitors. Avery commissioned 130 large scale sculptures spread across the desert of Borrego Springs. Today the foundation supports other creative spaces and uses the space to host events and engage with the environment. The website functions as a tell-all for visitors, donors, and artists. It hosts information for annual events and a guide for those looking to experience the sculpture garden.',
-      credits: 'Web Design and Web Development<br>2025<br>Roman Jaster<br>CREATIVE DIRECTION Yay Brigade<br>PHOTOGRAPHY Under the Sun Foundation'
+      credits: 'LINK <a href="https://underthesunfoundation.org/" target="_blank" rel="noopener noreferrer">Under the Sun Foundation</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>CREATIVE DIRECTION Yay Brigade<br>PHOTOGRAPHY Under the Sun Foundation'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Homepage — hero, mission statement, and primary navigation.',
+        caption: 'Landing Section and Mission Statement',
         rows: [
           { columns: 2, items: [
             { type: 'image', src: '/images/under-the-sun-foundation/img-2.jpg', alt: '' },
@@ -265,7 +264,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Homepage — hero, mission statement, and primary navigation.',
+        caption: 'Event Section: Candlewood Art Festival',
         rows: [
           { columns: 1, items: [
             { type: 'image', src: '/images/under-the-sun-foundation/img-5.jpg', alt: '' },
@@ -278,7 +277,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Homepage — hero, mission statement, and primary navigation.',
+        caption: 'Event Section: Sky Art Sculptures',
         rows: [
           { columns: 1, items: [
             { type: 'video', src: '/videos/under-the-sun-foundation/video-22.mp4', alt: '' }
@@ -291,7 +290,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Donation flow, component library, and detail shots.',
+        caption: 'Board Members and Contact Section',
         rows: [
           { columns: 2, items: [
             { type: 'video', src: '/videos/under-the-sun-foundation/video-21.mp4', alt: '' },
@@ -301,7 +300,7 @@ export const projects = [
       },
       {
         background: 'white',
-        caption: 'Donation flow, component library, and detail shots.',
+        caption: 'Mobile View',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/under-the-sun-foundation/img-17.jpg', alt: '' },
@@ -324,12 +323,12 @@ export const projects = [
     ],
     header: {
       intro: 'The <span>Museum of Fine Print</span> is a collection of smaller less noticeable print often found in contracts, advertisements, or agreements that typically outline hidden fees, expiration dates, or liability waivers. The poster\'s typography is made of scanned and digitally collected fine print and serves as a promo for its hypothetical exhibition.',
-      credits: 'Poster<br>2025<br>CREATIVE DIRECTION Christian Perez Morin'
+      credits: 'Poster<br>2025<br><br>CREATIVE DIRECTION Christian Perez Morin'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Homepage — hero, mission statement, and primary navigation.',
+        caption: '30 x 40 in.',
         rows: [
           { columns: 4, items: [
             { type: 'image', src: '/images/museum-of-fine-print/img-1.jpg', alt: '', span: 2, centered: true },
@@ -348,13 +347,12 @@ export const projects = [
       '/videos/calarts-school-of-art-project-archive/video-1.mp4',
     ],
     header: {
-      intro: 'The <span>School of Art</span> at <span>California Institute of the Arts</span> hosts documentation of final student work. The School of Art Project Archive has offered a window into student work since 2021. Each year the Project Archive asks students to submit their work via a website link. The archive has taken on multiple identities over its time, but the names of its students remain the connecting thread for incoming students and future employers.',
-      credits: 'Motion<br>2025<br>CREATIVE DIRECTION Roman Jaster'
+      intro: 'The <span>Project Archive</span> at <span>California Institute of the Arts</span> documents the final work from the School of Art. Each year the Project Archive asks students to submit their work via a website link. The archive has taken on multiple identities over its time, but the names of its students remain the connecting thread for incoming students and future employers.',
+      credits: 'Motion<br>2025<br><br>CREATIVE DIRECTION Roman Jaster'
     },
     sections: [
       {
         background: 'white',
-        caption: 'Four-part video promo series, produced for the 2024–25 academic year.',
         rows: [
           { columns: 4, items: [
             { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-1.mp4' },
