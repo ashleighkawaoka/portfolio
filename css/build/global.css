@@ -318,6 +318,22 @@ body {
   text-decoration: none;
   color: var(--black);
 }
+.nav__home-mobile {
+  display: inline;
+}
+@media screen and (min-width: 23rem) {
+  .nav__home-mobile {
+    display: none;
+  }
+}
+.nav__home-desktop {
+  display: none;
+}
+@media screen and (min-width: 23rem) {
+  .nav__home-desktop {
+    display: inline;
+  }
+}
 .nav__right {
   display: flex;
   gap: var(--size-080);
@@ -345,7 +361,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--size-080);
-  padding: var(--margin-outside) 0;
 }
 @media screen and (min-width: 75rem) {
   .home__grid {
@@ -399,11 +414,6 @@ body {
   max-width: 900px;
 }
 .project-header__credits {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.project-header__credit {
   font-family: var(--font-serif);
   font-size: var(--size-080);
   line-height: 1.2;

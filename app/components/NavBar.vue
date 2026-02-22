@@ -4,12 +4,14 @@
       
       <!-- Left: Home -->
       <div class="nav__left">
-        <NuxtLink to="/" class="nav__home">Ashleigh Kawaoka</NuxtLink>
+        <NuxtLink to="/" class="nav__home">
+          <span class="nav__home-mobile">AK</span>
+          <span class="nav__home-desktop">Ashleigh Kawaoka</span>
+        </NuxtLink>
       </div>
 
-      <!-- Right: Work + Contact -->
+      <!-- Right: Contact -->
       <div class="nav__right">
-        <a href="/#work" class="nav__link">Work</a>
         <NuxtLink to="/contact" class="nav__link">Contact</NuxtLink>
       </div>
 

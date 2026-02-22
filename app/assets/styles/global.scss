@@ -67,6 +67,22 @@ body {
         color: var(--black);
     }
 
+    &__home-mobile {
+        display: inline;
+
+        @media screen and (min-width: c.$x-small) {
+            display: none;
+        }
+    }
+
+    &__home-desktop {
+        display: none;
+
+        @media screen and (min-width: c.$x-small) {
+            display: inline;
+        }
+    }
+
     &__right {
         display: flex;
         gap: var(--size-080);
@@ -96,7 +112,6 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
 		gap: var(--size-080);
-        padding: var(--margin-outside) 0;
 
         @media screen and (min-width: c.$x-large) {
             grid-template-columns: 1fr 1fr 1fr;
@@ -156,12 +171,6 @@ body {
     }
 
     &__credits {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    &__credit {
         font-family: var(--font-serif);
         font-size: var(--size-080);
         line-height: 1.2;

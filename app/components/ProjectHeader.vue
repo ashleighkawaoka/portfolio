@@ -7,15 +7,7 @@
     </div>
 
     <!-- Block 2: Credits -->
-    <div class="project-header__credits">
-      <p 
-        v-for="credit in project.header.credits" 
-        :key="credit.role"
-        class="project-header__credit"
-      >
-        {{ credit.role }}: {{ credit.name }}
-      </p>
-    </div>
+    <div class="project-header__credits" v-html="project.header.credits"></div>
 
   </div>
 </template>
