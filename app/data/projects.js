@@ -175,7 +175,7 @@ export const projects = [
 	  '/images/greed-type-specimen/img-6.jpg',
       '/images/greed-type-specimen/img-7.jpg',
 	  '/images/greed-type-specimen/img-8.jpg',
-	  '/images/greed-type-specimen/img-9.jpg',
+	  '/images/greed-type-specimen/img-10.jpg',
     ],
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. This specimen explores the versatility of Greed through a series of mixed compositions paying tribute to stock market visuals.',
@@ -235,7 +235,7 @@ export const projects = [
     client: 'California Institute of the Arts Graphic Design Department',
     route: '/projects/calarts-mfa-gd-poster',
     thumbnails: [
-      '/images/calarts-mfa-gd-poster/img-1.jpg',
+      '/images/calarts-mfa-gd-poster/img-2.jpg',
     ],
     header: {
       intro: 'Poster design for California Institute of the Arts MFA program, 2026.',

@@ -357,7 +357,7 @@ body {
 .home__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--size-200);
+  gap: var(--size-100);
   padding: var(--size-300) 0;
 }
 @media screen and (min-width: 75rem) {
