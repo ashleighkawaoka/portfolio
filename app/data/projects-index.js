@@ -19,7 +19,7 @@ export const projectsIndex = [
     name: 'Greed Type Specimen',
     type: 'Publication Design',
     route: '/projects/greed-type-specimen',
-    thumbnails: ['/images/greed-type-specimen/img-12.jpg']
+    thumbnails: ['/videos/greed-type-specimen/video-1.mp4']
   },
   {
     id: 'calarts-mfa-gd-poster',
