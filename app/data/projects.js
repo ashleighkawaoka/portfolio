@@ -335,6 +335,20 @@ export const projects = [
     ]
   },
   {
+  id: 'museum-of-fine-print',
+  name: 'Museum of Fine Print',
+  client: 'Placeholder',
+  route: '/projects/museum-of-fine-print',
+  thumbnails: [],
+  header: {
+    intro: 'Info here for <span>Museum of Fine Print</span>.',
+    credits: [
+      { role: 'Design', name: 'Placeholder Name' },
+    ]
+  },
+  sections: []
+},
+  {
     id: 'calarts-school-of-art-project-archive',
     name: 'CalArts School of Art Project Archive Video Series',
     client: 'California Institute of the Arts School of Art',
