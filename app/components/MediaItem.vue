@@ -1,7 +1,10 @@
 <template>
   <div 
     class="media-item"
-    :class="item.span ? `media-item--span-${item.span}` : ''"
+    :class="[
+      item.span ? `media-item--span-${item.span}` : '',
+      item.centered ? 'media-item--centered' : ''
+    ]"
   >
     <video 
       v-if="item.type === 'video'"

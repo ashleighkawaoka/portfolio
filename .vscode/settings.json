@@ -1,0 +1,17 @@
+{
+	// Editor
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.useTabStops": true,
+	
+	// Live Sass Compiler
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/css/build"
+		}
+	],
+	"liveSassCompile.settings.generateMap": false
+}

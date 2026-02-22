@@ -18,6 +18,10 @@ logs
 .fleet
 .idea
 
+# Compiled CSS from Sass (Nuxt handles this)
+*.css.map
+app/assets/styles/*.css
+
 # Local env files
 .env
 .env.*

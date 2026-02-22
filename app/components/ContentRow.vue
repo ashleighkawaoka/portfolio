@@ -1,35 +1,38 @@
 <template>
   <div 
     class="project-section-wrapper"
-    :class="{ 'project-section-wrapper--black': section.bg === 'black' }"
+    :class="{ 'project-section-wrapper--black': section.background === 'black' }"
   >
     <div class="project-section-container">
 
-      <!-- Media Grid -->
-      <div 
-        class="content-row__grid"
-        :class="`content-row__grid--${section.columns}col`"
-      >
-        <MediaItem 
-          v-for="(item, index) in section.items" 
-          :key="index"
-          :item="item"
-          @open="openLightbox(index)"
-        />
-
-        <!-- Placeholders when no items yet -->
+      <!-- Loop through rows -->
+      <template v-for="(row, rowIndex) in section.rows" :key="rowIndex">
+        <!-- Media Grid -->
         <div 
-          v-if="section.items.length === 0"
-          v-for="n in section.columns"
-          :key="'placeholder-' + n"
-          class="content-row__placeholder"
-        ></div>
+          class="content-row__grid"
+          :class="`content-row__grid--${row.columns}col`"
+        >
+          <MediaItem 
+            v-for="(item, index) in row.items" 
+            :key="index"
+            :item="item"
+            @open="openLightbox(rowIndex, index)"
+          />
 
-      </div>
+          <!-- Placeholders when no items yet -->
+          <div 
+            v-if="row.items.length === 0"
+            v-for="n in row.columns"
+            :key="'placeholder-' + n"
+            class="content-row__placeholder"
+          ></div>
+
+        </div>
+      </template>
 
       <!-- Caption -->
-      <p v-if="section.label" class="content-row__caption">
-        {{ section.label }}
+      <p v-if="section.caption" class="content-row__caption">
+        {{ section.caption }}
       </p>
 
     </div>
@@ -48,13 +51,13 @@
         <button 
           class="lightbox__prev" 
           @click="prev"
-          v-if="section.items.length > 1"
+          v-if="allItems.length > 1"
         >←</button>
 
         <!-- Content -->
         <div class="lightbox__content">
           <video
-            v-if="currentItem.type === 'video'"
+            v-if="currentItem?.type === 'video'"
             :src="currentItem.src"
             autoplay
             muted
@@ -63,7 +66,7 @@
             class="lightbox__video"
           ></video>
           <img
-            v-else
+            v-else-if="currentItem"
             :src="currentItem.src"
             :alt="currentItem.alt || ''"
             class="lightbox__image"
@@ -74,7 +77,7 @@
         <button 
           class="lightbox__next" 
           @click="next"
-          v-if="section.items.length > 1"
+          v-if="allItems.length > 1"
         >→</button>
 
       </div>
@@ -94,25 +97,54 @@ const props = defineProps({
 })
 
 const lightboxOpen = ref(false)
-const currentIndex = ref(0)
+const currentRowIndex = ref(0)
+const currentItemIndex = ref(0)
 
-const currentItem = computed(() => props.section.items[currentIndex.value])
+// Flatten all items from all rows for lightbox navigation
+const allItems = computed(() => {
+  const items = []
+  props.section.rows?.forEach((row, rowIndex) => {
+    row.items.forEach((item, itemIndex) => {
+      items.push({ item, rowIndex, itemIndex })
+    })
+  })
+  return items
+})
 
-const openLightbox = (index) => {
-  currentIndex.value = index
+const currentItem = computed(() => {
+  if (allItems.value.length === 0) return null
+  const flatIndex = allItems.value.findIndex(
+    i => i.rowIndex === currentRowIndex.value && i.itemIndex === currentItemIndex.value
+  )
+  return flatIndex >= 0 ? allItems.value[flatIndex].item : null
+})
+
+function openLightbox(rowIndex, itemIndex) {
+  currentRowIndex.value = rowIndex
+  currentItemIndex.value = itemIndex
   lightboxOpen.value = true
 }
 
-const closeLightbox = () => {
+function closeLightbox() {
   lightboxOpen.value = false
 }
 
-const prev = () => {
-  currentIndex.value = (currentIndex.value - 1 + props.section.items.length) % props.section.items.length
+function prev() {
+  const flatIndex = allItems.value.findIndex(
+    i => i.rowIndex === currentRowIndex.value && i.itemIndex === currentItemIndex.value
+  )
+  const newIndex = (flatIndex - 1 + allItems.value.length) % allItems.value.length
+  currentRowIndex.value = allItems.value[newIndex].rowIndex
+  currentItemIndex.value = allItems.value[newIndex].itemIndex
 }
 
-const next = () => {
-  currentIndex.value = (currentIndex.value + 1) % props.section.items.length
+function next() {
+  const flatIndex = allItems.value.findIndex(
+    i => i.rowIndex === currentRowIndex.value && i.itemIndex === currentItemIndex.value
+  )
+  const newIndex = (flatIndex + 1) % allItems.value.length
+  currentRowIndex.value = allItems.value[newIndex].rowIndex
+  currentItemIndex.value = allItems.value[newIndex].itemIndex
 }
 
 const handleKeydown = (e) => {
