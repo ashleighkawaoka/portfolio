@@ -281,6 +281,7 @@ body {
   font-family: var(--font-sans-serif);
   color: var(--black);
   min-width: 320px;
+  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -315,6 +316,8 @@ body {
 .nav__home {
   font-family: var(--font-sans-serif);
   font-size: var(--size-200);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
   text-decoration: none;
   color: var(--black);
 }
@@ -336,10 +339,11 @@ body {
 }
 .nav__right {
   display: flex;
-  gap: var(--size-080);
+  letter-spacing: -0.02em;
 }
 .nav__link {
   font-size: var(--size-200);
+  line-height: 1.1;
   text-decoration: none;
   color: var(--black);
   cursor: pointer;
@@ -562,7 +566,7 @@ body {
   gap: 0;
   font-family: var(--font-sans-serif);
   font-size: var(--size-100);
-  line-height: 1.2;
+  line-height: 1.1;
   overflow-wrap: break-word;
   word-break: break-word;
 }
