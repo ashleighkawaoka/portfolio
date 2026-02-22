@@ -19,7 +19,8 @@ export const projectsIndex = [
     name: 'Greed Type Specimen',
     type: 'Publication Design',
     route: '/projects/greed-type-specimen',
-    thumbnails: ['/videos/greed-type-specimen/video-1.mp4']
+    thumbnails: ['/videos/greed-type-specimen/video-1.mp4'],
+    noPoster: true
   },
   {
     id: 'calarts-mfa-gd-poster',
@@ -47,6 +48,7 @@ export const projectsIndex = [
     name: 'CalArts School of Art Project Archive',
     type: 'Motion',
     route: '/projects/calarts-school-of-art-project-archive',
-    thumbnails: ['/videos/calarts-school-of-art-project-archive/video-1.mp4']
+    thumbnails: ['/videos/calarts-school-of-art-project-archive/video-1.mp4'],
+    noPoster: true
   }
 ]

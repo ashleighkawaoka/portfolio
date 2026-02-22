@@ -14,7 +14,7 @@
           <video
             v-if="isVideo(project.thumbnails?.[0])"
             :src="project.thumbnails[0]"
-            :poster="getPosterImage(project.thumbnails[0])"
+            :poster="project.noPoster ? undefined : getPosterImage(project.thumbnails[0])"
             autoplay
             muted
             loop

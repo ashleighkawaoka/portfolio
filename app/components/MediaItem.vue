@@ -10,7 +10,7 @@
     <video 
       v-if="item.type === 'video' && isVisible"
       :src="item.src"
-      :poster="getPosterImage(item.src)"
+      :poster="item.noPoster ? undefined : getPosterImage(item.src)"
       autoplay
       muted
       loop

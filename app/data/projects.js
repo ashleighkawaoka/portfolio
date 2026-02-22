@@ -156,6 +156,7 @@ export const projects = [
     thumbnails: [
       '/videos/greed-type-specimen/video-1.mp4',
     ],
+    noPoster: true,
     header: {
       intro: '<span>Greed</span>, by Displaay Type Foundry is a grotesque typeface with a wide range of weights and widths. The specimen explores the versatility of the typeface through a series of mixed compositions and a stock market theme.',
       credits: 'Publication Design<br>2025<br><br>TYPEFACE DESIGN Greed by Displaay<br>CREATIVE DIRECTION Michael Worthington'
@@ -355,10 +356,10 @@ export const projects = [
         background: 'white',
         rows: [
           { columns: 4, items: [
-            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-1.mp4' },
-            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-2.mp4' },
-            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-3.mp4' },
-            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-4.mp4' }
+            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-1.mp4', noPoster: true },
+            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-2.mp4', noPoster: true },
+            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-3.mp4', noPoster: true },
+            { type: 'video', src: '/videos/calarts-school-of-art-project-archive/video-4.mp4', noPoster: true }
           ]},
         ]
       },
