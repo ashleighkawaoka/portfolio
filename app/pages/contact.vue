@@ -25,9 +25,11 @@
         <div class="contact__resume-block">
           <p class="contact__resume-title">Experience</p>
           <p>Yay Brigade Studio</p>
-		  <p>California Institute of the Arts School of Art Web Designer</p>
+		  <p>California Institute of the Arts School of Art</p>
+		  <p>California Institute of the Arts Mac Lab</p>
           <p>Bailey Lauerman Agency</p>
           <p>Nelnet Bank</p>
+		  <p>Agent</p>
         </div>
 
         <!-- Education -->
@@ -35,6 +37,14 @@
           <p class="contact__resume-title">Education</p>
           <p>2019–23 The University of Nebraska Lincoln<br>College of Journalism and Mass Communications BFA</p>
           <p>2024–27 California Institute of the Arts<br>School of Art Graphic Design MFA</p>
+        </div>
+
+		<!-- Awards and Exhibitions -->
+        <div class="contact__resume-block">
+          <p class="contact__resume-title">Awards</p>
+          <p>2025 Yesterday, Today, and Tomorrow<br>Exhibition</p>
+          <p>2022 Bailey Lauerman<br>Mural Design</p>
+		  <p>2022 Public Relations Students Society of America (PRSSA)<br>Outstanding </p>
         </div>
 
       </div>

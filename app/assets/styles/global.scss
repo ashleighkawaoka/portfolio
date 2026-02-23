@@ -183,12 +183,13 @@ body {
 }
 
 .website {
-    color: #8e8e8e;
+    color: var(--black);
     text-decoration: none;
+}
 
-    &:hover {
-        text-decoration: underline;
-    }
+.project-header__credits .website {
+    color: #8e8e8e;
+    text-decoration: underline;
 }
 
 
