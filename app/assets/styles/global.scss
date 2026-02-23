@@ -64,7 +64,7 @@ body {
     &__home {
         font-family: var(--font-sans-serif);
         font-size: var(--size-200);
-		letter-spacing: -.02em;
+        letter-spacing: -.02em;
         line-height: 1.1;
         text-decoration: none;
         color: var(--black);
@@ -88,7 +88,7 @@ body {
 
     &__right {
         display: flex;
-		letter-spacing: -.02em;
+        letter-spacing: -.02em;
     }
 
     &__link {
@@ -106,16 +106,10 @@ body {
 .home {
     padding: 0 var(--size-100);
 
-	    @media screen and (min-width: c.$medium) {
-            grid-template-columns: 1fr 1fr 1fr;
-			padding: 0 var(--size-080);
-			
-        }
-
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
-		gap: var(--size-080);
+        gap: var(--size-080);
 
         @media screen and (min-width: c.$small) {
             grid-template-columns: 1fr 1fr;
@@ -123,7 +117,6 @@ body {
 
         @media screen and (min-width: c.$x-large) {
             grid-template-columns: 1fr 1fr 1fr;
-			
         }
     }
 
@@ -136,25 +129,25 @@ body {
         }
     }
 
-	&__card-image {
-		width: 100%;
-		overflow: hidden;
-		margin-bottom: var(--size-050);
-	}
+    &__card-image {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: var(--size-050);
+    }
 
-	&__card-media {
-		width: 100%;
-		aspect-ratio: 16/9;
-		object-fit: cover;
-		display: block;
-	}
+    &__card-media {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+    }
 
     &__card-label {
         font-family: var(--font-serif);
         font-size: var(--size-080);
         line-height: 1.2;
         color: var(--black);
-		padding-bottom: var(--size-080);
+        padding-bottom: var(--size-080);
     }
 }
 
@@ -175,7 +168,7 @@ body {
         font-family: var(--font-sans-serif);
         font-size: var(--size-400);
         line-height: 1.1;
-		letter-spacing: -.02em;
+        letter-spacing: -.02em;
         max-width: 900px;
     }
 
@@ -232,9 +225,9 @@ body {
     flex-direction: column;
     gap: var(--size-060);
 
-	@media screen and (min-width: c.$small) {
-		padding: 0 var(--size-600) var(--size-300);
-		gap: var(--size-080);
+    @media screen and (min-width: c.$small) {
+        padding: 0 var(--margin-outside) var(--size-300);
+        gap: var(--size-080);
     }
 }
 
@@ -271,9 +264,9 @@ body {
     &__caption {
         font-family: var(--font-serif);
         font-size: var(--size-080);
-		line-height: 1.2;
+        line-height: 1.2;
         color: var(--black);
-		text-align: center;
+        text-align: center;
     }
 }
 
@@ -333,17 +326,17 @@ body {
 
     &__wrapper {
         display: grid;
-		padding: var(--size-050) 0;
+        padding: 0;
         grid-template-columns: repeat(4, 1fr);
         gap: var(--size-100);
         margin: 0 auto;
         align-items: flex-start;
 
-		@media screen and (min-width: c.$medium) {
-			grid-template-columns: repeat(6, 1fr);
-			gap: var(--margin-outside);
-		}
-	}
+        @media screen and (min-width: c.$medium) {
+            grid-template-columns: repeat(6, 1fr);
+            gap: var(--margin-outside);
+        }
+    }
 
     &__info {
         grid-column: span 2;
@@ -356,9 +349,9 @@ body {
         overflow-wrap: break-word;
         word-break: break-word;
 
-		@media screen and (min-width: c.$medium) {
-			grid-column: span 3;
-		}
+        @media screen and (min-width: c.$medium) {
+            grid-column: span 3;
+        }
 
         a {
             text-decoration: none;
