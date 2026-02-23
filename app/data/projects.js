@@ -10,7 +10,7 @@ export const projects = [
     ],
     header: {
       intro: 'Website design and development for <a class="website" href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"><span>The Design Center</span></a> at <span>California Institute of the Arts</span>. The Design Center offers peer-to-peer design services to students. This website serves as a guide providing FAQs, schedule updates, and appointment booking. The website is a reflection of the Design Center\'s personality and has added subtle interactions of joy.',
-      credits: 'LINK <a class="website" href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer">The Design Center</a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
+      credits: 'LINK <a class="website" href="https://designcenter.calarts.edu/" target="_blank" rel="noopener noreferrer"></a><br>Web Design and Web Development<br>2025<br><br>Roman Jaster<br>Designing for the Design Center Class<br>PHOTOGRAPHY Rafael Hernandez<br>CREATIVE DIRECTION Micheal Worthington'
     },
     sections: [
       {
