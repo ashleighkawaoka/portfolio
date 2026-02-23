@@ -108,7 +108,7 @@ body {
 
 	    @media screen and (min-width: c.$medium) {
             grid-template-columns: 1fr 1fr 1fr;
-			padding: 0 var(--margin-outside);
+			padding: 0 var(--size-080);
 			
         }
 
@@ -158,13 +158,13 @@ body {
  * ANCHOR: Project Header
 ------------------------------------------------*/
 .project-header {
-    padding: var(--margin-outside) var(--margin-outside);
+    padding: 0 var(--margin-outside) var(--margin-outside) var(--margin-outside);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: var(--size-400);
-    max-width: 80ch;
+    max-width: 75ch;
     margin: 0 auto;
 
     &__intro {
@@ -228,7 +228,7 @@ body {
     gap: var(--size-080);
 
 	@media screen and (min-width: c.$medium) {
-		padding: 0 var(--margin-outside) var(--size-300);
+		padding: 0 var(--size-600) var(--size-300);
     }
 }
 
