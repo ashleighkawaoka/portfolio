@@ -88,7 +88,7 @@ export const projects = [
       '/videos/baking-ratios/video-1.mp4',
     ],
     header: {
-      intro: '<a class="website" href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Bak:ng Rat:os</span></a> is a data visualization tool for common baking ratios, their ingredients, and how those ingredients come together. The navigation, or "bakery" of this website is home to common baked goods. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
+      intro: '<a class="website" href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer"><span>Bak:ng Rat:os</span></a> is a data visualization tool for common baking ratios. It offers a visual representation of ratios, an adjustable ingredient calculator for easy scaling, and a basic recipe allowing a space for recipe experimentation. The website\'s design served as a typographic exploration in using ligatures, style alternates, and display typefaces.',
       credits: 'LINK <a class="website" href="https://bakingratios.pages.dev/" target="_blank" rel="noopener noreferrer">Bak:ng Rat:os</a><br>Web Design and Web Development<br>2026<br><br>TYPEFACE DESIGN Lubaline by Sproviero Type<br>TYPEFACE DESIGN Pino Grigio Modern by Alan Meeks'
     },
     sections: [
